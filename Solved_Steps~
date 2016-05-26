@@ -1,0 +1,11 @@
+Step-1: NETWORK SCAN AND WRITE IT TO A FILE
+            iwlist wlan0 scan > /home/spandan/desktop/NetworkScan.txt
+Step-2: CHECK IF REQUIRED CONNECTION IS OPEN
+            Open in either C++ or Python and search for SSID or ESSID.
+Step-3(a): CONNECT TO NETWORK
+            nmcli c up id <NetworkName> > somefile.txt
+            example: ncmli c up id CAMPUS
+STEP-3(b): CREATE A NEW NETWORK
+            // This is a work-away till I get a permanent solution
+            1. Initially create a ad-hoc network from the gui on all devices.
+            2. Then use nmcli con up id <ESSID_of_connection>
