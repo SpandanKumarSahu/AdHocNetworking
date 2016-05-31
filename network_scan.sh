@@ -1,3 +1,4 @@
 #!/bin/bash
 
-echo `nmcli dev wifi list > NetworkScan.txt`
+echo `sleep 10`
+echo `iwlist wlan0 scan > NetworkScan.txt`

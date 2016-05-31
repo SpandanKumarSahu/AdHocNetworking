@@ -1,0 +1,10 @@
+wlan0     IEEE 802.11abg  ESSID:"ACADEMIC-1"  
+          Mode:Managed  Frequency:2.437 GHz  Access Point: E8:BA:70:C2:39:10   
+          Bit Rate=52 Mb/s   Tx-Power=200 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+          Link Quality=56/70  Signal level=-54 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+

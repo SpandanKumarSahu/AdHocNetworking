@@ -1,7 +1,9 @@
 #!/bin/bash
 
-echo `service network-manager stop`
-echo `ip link set wlan0 down`
-echo `iwconfig wlan0 mode ad-hoc essid AdHocNetwork channel 11`
-echo `ip link wlan0 up`
-echo `dhclient wlan0`
+echo `python initialize_new_AdHocFile.py`
+echo `cp AdHocNetwork /etc/NetworkManager/system-connections`
+echo `stop network-manager`
+echo `sleep 7`
+echo `start network-manager`
+echo `sleep 7`
+echo `nmcli con up id AdHocNetwork`
