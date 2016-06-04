@@ -1,16 +1,16 @@
 [connection]
-  id=AdHocNetwork
- uuid=6236ec31-b7a4-4515-bfed-c28b2a2fc28e
-  type=802-11-wireless
-  autoconnect=false
-  
-  [802-11-wireless]
-  ssid=AdHocNetwork
-  mode=adhoc
+     id=AdHocNetwork
+ uuid=40c570c6-3749-4fd4-b085-497d0dad102f
+     type=802-11-wireless
+     autoconnect=false
+     
+     [802-11-wireless]
+     ssid=AdHocNetwork
+     mode=adhoc
  mac-address=74:29:af:fa:fd:bb
-  
-  [ipv6]
-  method=auto
-  
-  [ipv4]
-  method=shared
+     
+     [ipv6]
+     method=auto
+     
+     [ipv4]
+     method=shared

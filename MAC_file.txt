@@ -1,10 +1,9 @@
 wlan0     Link encap:Ethernet  HWaddr 74:29:af:fa:fd:bb  
-          inet addr:10.145.120.213  Bcast:10.145.127.255  Mask:255.255.128.0
           inet6 addr: fe80::7629:afff:fefa:fdbb/64 Scope:Link
-          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
-          RX packets:121553 errors:0 dropped:0 overruns:0 frame:1030613
-          TX packets:77047 errors:0 dropped:0 overruns:0 carrier:0
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:1842 errors:0 dropped:0 overruns:0 frame:354421
+          TX packets:665 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:1000 
-          RX bytes:156267659 (156.2 MB)  TX bytes:8232969 (8.2 MB)
+          RX bytes:115697 (115.6 KB)  TX bytes:97889 (97.8 KB)
           Interrupt:16 
 

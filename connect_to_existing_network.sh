@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo `nmcli con up id AdHocNetwork`
+echo `nmcli dev wifi connect AdHocNetwork`
 
