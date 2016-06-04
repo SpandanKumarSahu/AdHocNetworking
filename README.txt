@@ -1,9 +1,10 @@
   How to Run :
   
-        1. Place the codes in all the devices.
+        1. Place the codes in all the devices. ( Turning off proxy suggested)
         2. Get into the root. ( Type sudo -i ) - Necessary because netwrok creation can only done in sudo mode.
         3. Go into the directory of the code.
         4. May have to grant permissions to all the files. So type, chmod +rwxrwxrwx *
+            (This needs to be done once, before the script is run for the first time ever)
         5. Type python Starter.py
         6. This will get you all the devices connected.
         7. Incase you want to run a server client model, we had designed one.
