@@ -1,5 +1,8 @@
 import subprocess
-subprocess.call("./getMAC.sh",shell=True)
+import os
+
+os.system("ifconfig wlan0 > MAC_file.txt")
+os.system("uuidgen > UUID_file.txt")
 with open('AdHocNetwork', 'r') as myfile:
     data=myfile.readlines()
 print data[9]

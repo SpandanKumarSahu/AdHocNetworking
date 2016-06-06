@@ -2,6 +2,7 @@
 
 import subprocess
 import sys
+import os
 
 def isNetworkAvailable (report):
     if 'AdHocNetwork' in report.read():
@@ -10,17 +11,29 @@ def isNetworkAvailable (report):
         return False
 
 print "start"
-subprocess.call("./clear_mess.sh",shell=True)
-subprocess.call("./network_scan.sh",shell=True)
+os.system("sudo rm /etc/NetworkManager/system-connections/AdHocNetwork")
+os.system("sudo ifconfig wlan0 down")
+os.system("sudo stop network-manager")
+os.system("sleep 3")
+os.system("sudo start network-manager")
+os.system("sudo ifconfig wlan0 up")
+os.system("sleep 10")
+os.system("iwlist wlan0 scan > NetworkScan.txt")
 report=open('NetworkScan.txt','r')
 if isNetworkAvailable(report):
-    subprocess.call("./connect_to_existing_network.sh",shell=True)
+    os.system("nmcli dev wifi connect AdHocNetwork")
     print "Connected to Network"
     #subprocess.call("./call_client.sh",shell=True)
 else:
     print "Here it goes for creating a new connection"
     try:
-        subprocess.call("./create_new_adHoc_network.sh",shell=True)
+        os.system("python initialize_new_AdHocFile.py")
+        os.system("cp AdHocNetwork /etc/NetworkManager/system-connections")
+        os.system("stop network-manager")
+        os.system("sleep 7")
+        os.system("start network-manager")
+        os.system("sleep 7")
+        os.system("nmcli con up id AdHocNetwork")
     except Error:
         print "Cannot Create"
         sys.exit(0)
