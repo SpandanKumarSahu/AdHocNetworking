@@ -1,7 +1,6 @@
 ACADEMIC-1
 ACADEMIC-2
 AdHocNetwork
-AdHocNetwork~
 Auto Ethernet
 BcVh-YW1sYW5rdW1hcnM
 CAMPUS
