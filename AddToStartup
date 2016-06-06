@@ -1,0 +1,22 @@
+Steps to add this program to the startup, i.e. 
+an Ad-hoc network gets created/joined at startup, no more fuss.
+
+1. On the terminal type:  
+sudo su
+gedit /etc/init.d/onBoot
+/* on the gedit window type and save 
+        #!/bin/sh
+        /path/to/onBoot.sh
+   for example,on my computer it looks like:
+        #!/bin/sh
+        /home/spandan/Desktop/SwarmFiles/AdhocNetwork/onBoot.sh
+    Press ctrl+x and save.
+*/
+chmod ugo+x /etc/init.d/onBoot
+update-rc.d onBoot defaults
+
+2. On the directory where you're reading this, donot forget to 
+    give executable access to onBoot.sh
+    You can do this by:  chmod +rwxrwxrwx onBoot.sh
+    (You'd have done this already when you had typed chmod +rwxrwxrwx * )
+

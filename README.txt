@@ -1,5 +1,5 @@
   How to Run :
-  
+
         1. Place the codes in all the devices. ( Turning off proxy suggested)
         2. Get into the root. ( Type sudo -i ) - Necessary because netwrok creation can only done in sudo mode.
         3. Go into the directory of the code.
@@ -9,6 +9,7 @@
         6. This will get you all the devices connected.
         7. Incase you want to run a server client model, we had designed one.
             In the Starter.py file, I have commented out two lines. Just uncomment them and run Starter.py again
+        8. Please read AddToStartup document.
          
 Note:
         1. The server-client model was not tested well enough. It has some bugs:
